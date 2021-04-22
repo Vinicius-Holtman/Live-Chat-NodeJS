@@ -9,7 +9,7 @@ class UsersService {
     constructor(){
         this.usersRepository = getCustomRepository(UsersRepository);
     }
-    
+
     async create(email: string) {
         // verificar se usuario existe
 
