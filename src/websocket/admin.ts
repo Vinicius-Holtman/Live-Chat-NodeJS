@@ -1,6 +1,5 @@
 import { io } from "../http";
 import { ConnectionsService } from "../services/ConnetionsService";
-import "./websocket/admin";
 
 
 io.on("connect", async (socket) => {
