@@ -30,6 +30,13 @@ class UsersService {
         // se nao exister, salvar no DB
         return user;
     }
+    async findByEmail(email: string) {
+        const user = await this.usersRepository.findOne({ 
+            email, 
+        });
+        return user;
+    }
+
 }
 
 export {UsersService};

@@ -1,18 +1,12 @@
-import express from "express";
-import "./database";
-import { routes } from "./routes";
+import { http } from "./http";
+import "./websocket/client";
 
-const app = express();
+http.listen(3333);
+console.log("conectado");
 
-app.use(express.json());
-
-app.use(routes);
 
 // GET = Buscas
 // POST = Criar
 // PUT = Alteracao
 // DELETE = Deletar
 // PATCH = Alterar um dado especifico
-
-app.listen(3333);
-console.log("conectado");
