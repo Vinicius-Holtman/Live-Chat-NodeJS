@@ -5,7 +5,6 @@ import "./websocket/admin";
 http.listen(3333);
 console.log("conectado");
 
-
 // GET = Buscas
 // POST = Criar
 // PUT = Alteracao
